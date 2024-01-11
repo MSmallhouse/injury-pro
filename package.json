@@ -1,7 +1,7 @@
 {
-  "name": "injury-pro-demo",
+  "name": "injury-pro",
   "version": "0.1.0",
-  "homepage": "https://MSmallhouse.github.io/injury-pro-demo",
+  "homepage": "https://MSmallhouse.github.io/injury-pro",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
