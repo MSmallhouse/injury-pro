@@ -1,0 +1,126 @@
+.buttons {
+  justify-content: center;
+  text-align: center;
+}
+
+.coloredButton {
+  display: inline-block;
+  justify-content: center;
+  width: 233px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+  margin: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+.coloredButton:hover {
+  background-color: #d9d9d9;
+}
+
+.homeButton {
+  display: inline-block;
+  justify-content: center;
+  width: 93%;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  left: 50%;
+
+  background-color: #5b7d6c;
+  color: #f0faf4;
+
+  margin: 10px;
+  margin-left: 0px;
+  transition: background-color 0.3s ease-in-out;
+
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.section {
+  padding: 20px;
+  background-color: #d4e4d4;
+  text-align: center;
+}
+
+.section h2 {
+  color: #405e4f;
+  text-align: center;
+}
+.home {
+  align-items: center;
+  justify-content: center;
+}
+
+.section p {
+  color: #666666;
+}
+
+.exerciseImage {
+  width: 190px;
+  display: inline-block;
+  height: auto;
+  padding: 5 25px;
+  margin-left: 43%;
+  margin-right: 43%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  margin: 3%;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1ede7;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+}
+
+.description {
+  text-align: center;
+}
+
+ul {
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  padding: 20px;
+  padding-left: 35px;
+}
+
+.addRemoveButton {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 42.9%;
+  margin-right: 42.9%;
+}
+
+.addRemoveButton:hover {
+  background-color: #d9d9d9;
+}
+
+.runnerImg {
+  object-fit: cover;
+  max-width:100%;
+}

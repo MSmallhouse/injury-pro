@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Navbar from "./components/Navbar.jsx";
+import Home from "./components/Home.jsx";
 
-function App() {
+// Import and apply global CSS stylesheet
+import "./styles/styles.css";
+
+// Import and apply App specific css
+import css from "./styles/App.module.css"
+
+// The component that adds our Meta tags to the page
+import Seo from './components/seo.jsx';
+
+// App function that is reflected across the site
+export default function App() {
+  const [page, setPage] = useState("main");
+  const [trainingPlan, setTrainingPlan] = useState([])
+  
+  function handleClick(page) {
+    setPage(page);
+    window.scrollTo(0, 0);
+  };
+  
+  function addExerciseToPlan(exercise) {
+    // Check if an exercise with the same name already exists in the training plan
+    const exerciseExists = trainingPlan.some((existingExercise) => existingExercise.name === exercise.name);
+
+    if (!exerciseExists) {
+      setTrainingPlan((prevPlan) => [...prevPlan, exercise]);
+    }
+  };
+  
+  function removeExerciseFromPlan(exercise) {
+    const updatedPlan = trainingPlan.filter((existingExercise) => existingExercise.name !== exercise.name);
+    setTrainingPlan(updatedPlan);
+  }
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Seo />
+      <div className={css.container}>
+        <Navbar onButtonClick={handleClick} />
+        <main role="main" className="wrapper">
+          <Home onButtonClick={handleClick} page={page}
+                addExerciseToPlan={addExerciseToPlan} removeExerciseFromPlan={removeExerciseFromPlan}
+                trainingPlan={trainingPlan} />
+        </main>
+      </div>
+    </>
   );
 }
-
-export default App;

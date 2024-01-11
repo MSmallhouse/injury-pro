@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+}
+.container {
+  width: 100%;
+
+  
+}
+
+button {
+  margin-left: auto;
+  padding: 10px 30px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease-in-out;
+  color: #405e4f;
+}
+
