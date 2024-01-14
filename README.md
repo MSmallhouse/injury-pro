@@ -11,7 +11,7 @@ We allow users to diagnose their own injuries with in-depth descriptions of each
 We focused on making an easy to use interface, which is especially important for our older users who face injuries at a higher rate. Our design requires minimal clicks for site navigation.
 
 ### Home Page
-(/images/homepage.png)
+![homepage](/images/homepage.png)
 
 ### Example Training Plan
-(/images/training-plan.png)
+![training plan](/images/training-plan.png)
